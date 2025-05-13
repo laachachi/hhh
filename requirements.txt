@@ -33,7 +33,6 @@ decorator==5.1.1
 defusedxml==0.7.1
 Deprecated==1.2.14
 distro==1.9.0
-dlib @ file:///C:/Users/Ayoub/Downloads/Dlib_Windows_Python3.x-main/Dlib_Windows_Python3.x-main/dlib-19.24.1-cp311-cp311-win_amd64.whl#sha256=6f1a5ee167975d7952b28e0ce4495f1d9a77644761cf5720fb66d7c6188ae496
 dnspython==2.7.0
 executing==2.0.1
 faiss-cpu==1.10.0
