@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import faiss
 import pickle
 import numpy as np
@@ -11,7 +11,9 @@ import time  # Pour attendre en cas de problèmes Google Sheets
 
 # Initialiser Flask
 app = Flask(__name__)
-CORS(app)
+CORS(app )
+cross_origin(origins = '*') 
+
 
 # Configuration du logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
