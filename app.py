@@ -12,7 +12,7 @@ import time  # Pour attendre en cas de problèmes Google Sheets
 # Initialiser Flask
 app = Flask(__name__)
 CORS(app )
-cross_origin(origins = '*') 
+
 
 
 # Configuration du logging
@@ -109,6 +109,7 @@ def get_best_match(user_question):
 
 # Route principale /chat
 @app.route("/chat", methods=["POST"])
+@cross_origin()
 def chat():
     data = request.json
     user_question = data.get("question", "")
